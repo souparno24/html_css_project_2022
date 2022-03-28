@@ -1,4 +1,7 @@
 /* navbar */
+.nc{
+  background-color:#f1f1f1;
+}
 .navbar-toggler:focus{
  box-shadow: none;
 }
@@ -12,6 +15,10 @@
 
   margin: 0 auto; /* Center it */
 }
+.slider__button{
+  width:150px;
+  height: 50px;
+}
 
 .slider__body {
   position: absolute; /* Position the background text */
@@ -23,7 +30,7 @@
   padding: 20px; /* Some padding */
   display:flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 250px;
 }
 
 /* cards */
@@ -124,13 +131,23 @@
     background-color:rgb(51, 255, 0);
     align-items: center;
   }
-
+.slider > img{
+  height: 200px;
+}
   
  .slider__body{
-   flex-direction: column;
-   gap: 20px;
+   
+   justify-content: center;
+   align-items: center;
+  gap:5px;
+   height: 90px;
  }
-  
+.slider__button{
+  width:300px;
+  height: 40px;
+
+}
+
   .cards {
     flex-direction: column;
     justify-content: center;
