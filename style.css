@@ -11,7 +11,7 @@ body{
   width: 100%;
 }
 .navbar {padding: 0 1rem;}
-.navbar .nav-item{padding:1rem 1rem}
+.navbar .nav-item{padding:2rem 2rem}
 #nav__img{
   height: 100%;
   width: 25%;
@@ -54,27 +54,15 @@ body{
 .slider__button{
   width:250px;
   height: 50px;
- 
+  color:white;
   background-color:rgb(51, 255, 0);
 
 }
 
-.slider {
-  position: relative;
-  
-  margin: 0 ; 
-  }
-  .slider__button{
-  width:250px;
-  height: 50px;
-  background-color:rgb(51, 255, 0);
-  
-  }
-  
-  .slider__img{
+.slider__img{
   width:100%;
-  }
-  .slider__body {
+}
+.slider__body {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
@@ -84,274 +72,128 @@ body{
   padding: 20px; /* Some padding */
   display:flex;
   flex-direction: row;
-  gap: 300px;
-  }.footer__news__body{
-    margin:10px;
-    background-color: rgb(49, 45, 45);
-    }
+  gap: 500px;
+}
+.slider__text{
+
+font-size:larger;
   
-  .slider__text{
-  
-  font-size:larger;
-  }
+}
 
 /* cards */
 
-.cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 150px;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
   .card{
-  position: relative;
-  width:18rem;
-  background: #fff;
-  }
-  .card__button{
+    position: relative;
+    width: 30rem;
+    background: #fff;
+    
+}
+.card__button{
   background-color:rgb(51, 255, 0) ;
-  transform: translateY(-10px);
-  }
+  transform: translateY(-20px);
+  width:150px;
   
+}
+
+
   .card-body{
-  text-align: center;
+    
+    text-align: center;
+    
   }
-  .card__img{
+.card__img{
   position: relative;
-  transform: translateY(-50px);
   
+  transform: translateY(-50px);
+
   height: 100px;
   width: 100px;
   display:block;
   margin:auto;
-  }
-  .card-text{
-  transform: translateY(-25px);
-  color: grey;
-  }
-  .card-title{
-  transform: translateY(-35px);
-  }
-  
+ 
+}
+.card-text{
+  transform: translateY(-30px);
+  color:grey;
+  font-size: larger;
+}
+.card-title{
+  transform: translateY(-50px);
+}
+
+
   .card-img-top{
-  border-radius: 50%;
-  border:5px solid lightgreen;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+   
+    border-radius: 50%;
+    border:5px solid  lightgreen;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
   }
-  
+
   /* buynow */
   .buy{
     position: relative;
+  
     color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    }
-    
-    .buy__text{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    gap: 50px;
-    transform: translateY(100px);
-    
-    transform: translate(-50%, -50%);
-    }
-    .buy__button{
-    background-color: rgb(51, 255, 0);
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+.buy__text{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 50px;
+  font-size: larger;
+  transform: translateY(100px);
+
+  transform: translate(-50%, -50%);
+}
+.buy__button{
+  background-color: rgb(51, 255, 0);
     width:250px;
     height:40px;
     text-align: center;
     align-items: flex-end;
     transform: translateY(10px);
-    border-radius: 0%;
-    }
-    
+    color: white;
+  
+  
+  border-radius: 0%;
+}
+
 /* footer */
-
-
 .footer__outer{
   background-color: rgb(6, 8, 10);
-  width: 100%;
-  }
-  
-  .footer{
+}
+
+.footer{
   display: flex;
   justify-content: space-around;
-  gap:100px;
-  
+
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  }
-  .footer__address{
+}
+.footer__address{
   color:azure;
-  }
-  .footer__links{
+}
+.footer__links{
   color:azure;
-  }
-  .footer__links__li{
+}
+.footer__links__li{
   margin-bottom: 5px;
   margin-left: 15px;
-  }
-  .footer__links__icon{
-  color:white;
-  margin: 0;
-  }
-  .footer__links__header{
-  margin-left: 0px;
-  }
-  .footer__news{
-  margin:10px;
-  background-color: rgb(49, 45, 45);
-  }
-  .footer__news__card{
-  width: 18rem;
-  background-color: rgb(49, 45, 45);
-  }
-  .footer__news__body{
-  margin:10px;
-  background-color: rgb(49, 45, 45);
-  }
-  
-  .footer__bottom{
-  border-top: 2px solid rgba(105,105,105,0.5);
-  color:white;
-  text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  }
-  .footer__news__header{
-  text-align: 
-  left;color: antiquewhite;
-  }
-  .footer__news__text{
-  text-align: left;
-  color: grey;
-  
-  }
-  .footer__news__input{
-  width:90%;
-  margin-bottom: 3px;
-  }
-  #test2{
-  width:91%;
-  background-color: rgb(51, 255, 0);
-  }
-  .footer__bottom__span{
-  color:rgb(51, 255, 0);
-  }
-  
-  .footer__icons > li:before { 
-  content: ">";
-  }
-  .footer__links__ul{
-  padding-left: 1em; 
-  list-style: none;
-  text-indent: -1em;
-  margin-left: 0;
-  }
-  
-
-
-
-
-  
-
-/* responsive mobile*/
-
-
-@media (max-width: 576px) {
- 
-  #nav__img{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 100%;
-    width: 200px;
-    transform:translateX(50px);
-    }
-    .navbar {padding: 0;}
-.navbar .nav-item{padding:0}
-    .nav__ul{
-    background-color:rgb(51, 255, 0);
-    
-    }
-    .nav-link{
-      font-size: small;
-    }
-   
-    .nav-item {
-    text-align: center;
-    
-    }
-    .active{
-    background-color:lightgrey;
-    
-    }
-.slider > img{
-height: 200px;
-}
-
-.slider__body{
- 
- justify-content: center;
- align-items: center;
-gap:5px;
- height: 70px;
-}
-
-.slider__text{
-font-size: small;
-}
-.slider__button{
-width:250px;
-font-size: small;
-height: 30px;
-transform: translateY(-10px);
-
-}
-
-.cards {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 500px;
-}
-.buy__img{
-  height: 250px;
-}
-
-
-.buy__text{
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: small;
-}
-.buy__button{
-  background-color: rgb(51, 255, 0);
-  width:125px;
-  text-align: center;
-  transform: translateY(-50px);
-  
-}
-
-
-.footer{
-  flex-direction: column;
- 
-  gap: 50px;
-
-
-}
-.footer__logo{
-  padding-top: 20px;
 }
 .footer__links__icon{
   color:white;
@@ -391,164 +233,394 @@ transform: translateY(-10px);
 }
 .footer__news__input{
   width:90%;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+}
+ #test2{
+  width:91%;
+  background-color: rgb(51, 255, 0);
+  color: white;
+ }
+ .footer__bottom__span{
+  color:rgb(51, 255, 0);
+ }
+
+ .footer__icons > li:before { 
+  content: ">";
+}
+.footer__links__ul{
+  padding-left: 1em; 
+  list-style: none;
+  text-indent: -1em;
+  margin-left: 0;
 }
 
-.footer__links{
-  transform: translateX(-100px);
-}
-.footer__address{
-  transform: translateX(-70px);
-}
+/* responsive tab*/
 
 
 
-}
+
+  
+
+/* responsive mobile*/
 
 
-    @media all and (max-width: 1366px) and (orientation:portrait){
+@media  (max-width: 1500px){
 
-      .nav-link{
-        color:black;
-          margin-right: 2px;
-        margin-left: 2px;
-        font-size: 25px;
-        text-align: center;
-        }
+  .nav-link{
+    color:black;
+      margin-right: 2px;
+    margin-left: 2px;
+    font-size: 18px;
+    text-align: center;
+    }
+    .slider__body{
+      gap:15px;
+    }
+    .card{
+      margin-bottom: 50px;
+      width: 16rem;
+    }
+    .card-text{
+      font-size: small;
+    }
+
+  .footer__news__card{
+  width:250px;
+  margin-right: 5px;
+  }
+  .footer{
+  display: flex;
+
+  gap:50px;
+  }
+  
+  
+  .cards{
+  gap: 50px;
+  }
+  }
 
 
-      .footer__news__card{
+
+
+@media all and (max-width: 1366px) and (orientation:portrait){
+
+  .nav-link{
+    color:black;
+      margin-right: 2px;
+    margin-left: 2px;
+    font-size: 18px;
+    text-align: center;
+    }
+    .slider__body{
+      gap:15px;
+    }
+    .card{
+      margin-bottom: 50px;
+      width: 16rem;
+    }
+    .card-text{
+      font-size: small;
+    }
+    .buy__button{
+      background-color: rgb(51, 255, 0);
       width:250px;
-      margin-right: 5px;
-      }
-      .footer{
-      display: flex;
-    
-      gap:50px;
-      }
+      text-align: center;
+      transform: translateY(10px);
       
-      
-      .cards{
-      gap: 50px;
-      }
-      }
+    }
+  
+  
 
-    @media all and (max-width: 768px) and (max-height: 1024px) and (orientation:portrait) {
-      .nav-link{
+  .footer__news__card{
+  width:250px;
+  margin-right: 5px;
+  }
+  .footer{
+  display: flex;
+
+  gap:50px;
+  }
+  
+  
+  .cards{
+  gap: 50px;
+  }
+  }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .nav-link{
+  color:black;
+    margin-right: 2px;
+  margin-left: 2px;
+  font-size: 15px;
+  text-align: center;
+  }
+  
+
+  .navbar {padding: 0 1rem;}
+  .navbar .nav-item{padding:1rem 1rem}
+
+
+  .slider__body{
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+  height: 90px;
+  }
+  
+  .cards{
+   align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    }
+    .card{
+    position: relative;
+    width:14rem;
+   
+    background: #fff;
+    }
+  .buy__img{
+  height: 250px;
+  }
+  
+  .buy__text{
+  
+  align-items: center;
+  font-size: medium;
+  }
+  .buy__button{
+    background-color: rgb(51, 255, 0);
+    width:300px;
+    text-align: center;
+    transform: translateY(-20px);
+    
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .footer__news__body{
+      margin:10px;
+      background-color: rgb(49, 45, 45);
+      }
+      .footer__news__card{
+        width: 14rem;
+        background-color: rgb(49, 45, 45);
+        }
+    
+    .footer__logo img{
+    width: 150px;
+    padding: 2px;
+    }
+    
+    .footer__links{
+      transform:translateY(5px);
+      
+      }
+  }
+  
+
+  @media all and (device-width:1024px ) and (device-height: 768px)and (orientation:landscape) {
+
+    .nav-link{
       color:black;
         margin-right: 2px;
       margin-left: 2px;
-      font-size: 15px;
+      font-size: 20px;
       text-align: center;
       }
-      
-  
-      .navbar {padding: 0 1rem;}
-      .navbar .nav-item{padding:1rem 1rem}
-
-
-      .slider__body{
-      justify-content: center;
-      align-items: center;
-      gap:5px;
-      height: 90px;
-      }
-      
       .cards{
-       align-items: center;
-        justify-content: center;
-        gap: 10px;
-        
-        }
-        .card{
-        position: relative;
-        width:16rem;
-       
-        background: #fff;
-        }
-      .buy__img{
-      height: 250px;
-      }
-      
-      .buy__text{
-      
-      align-items: center;
-      font-size: medium;
-      }
-      .buy__button{
-      background-color: rgb(51, 255, 0);
-      width:300px;
-      text-align: center;
-      transform:translateY(-15px);
-      }
-      .footer{
-        display: flex;
-        flex-direction: row;
-        gap:20px;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        }
-        .footer__news__body{
-          margin:10px;
-          background-color: rgb(49, 45, 45);
+         justify-content: center;
+         gap: 10px;
+         
+         }
+         .card{
+         position: relative;
+         width:18rem;
+        
+         background: #fff;
+         }
+         .footer{
+          display: flex;
+          flex-direction: row;
+          gap:20px;
+          align-items: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
           }
-          .footer__news__card{
-            width: 14rem;
+          .footer__news__body{
+            margin:10px;
             background-color: rgb(49, 45, 45);
             }
-        
-        .footer__logo img{
-        width: 150px;
-        padding: 2px;
-        }
-        
-        .footer__links{
-          transform:translateY(5px);
+            .footer__news__card{
+              width: 16rem;
+              background-color: rgb(49, 45, 45);
+              }
           
+          .footer__logo img{
+          width: 200px;
+          padding: 2px;
           }
+          
+          .footer__links{
+            transform:translateY(5px);
+            
+            }
+  }
+
+ 
+  @media (max-width: 700px) {
+    #nav__img{
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 100%;
+      width: 200px;
+      transform:translateX(50px);
       }
+    .nav__ul{
+      background-color:rgb(51, 255, 0);
+     }
+     .navbar {padding: 0;}
+     .navbar .nav-item{padding:1rem 1rem}
+  
+  
+    .nc{
+      background-color: white;
+    }
+    .nav-item {
+      text-align: center;
+     
+  
+    }
+    .active{
+      background-color:lightgrey;
+    }
+  .slider > img{
+    height: 200px;
+  }
+    
+   .slider__body{
+     
+     justify-content: center;
+     align-items: center;
+    gap:5px;
+     height: 70px;
+   }
+  
+   .slider__text{
+    font-size: small;
+   }
+  .slider__button{
+    width:250px;
+    font-size: small;
+    height: 30px;
+    transform: translateY(-10px);
+  
+  }
+  
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card{
+      margin-bottom: 50px;
+      width: 18rem;
+    }
+    .card-text{
+      font-size: small;
+    }
+    .buy__img{
+      height: 250px;
+    }
+  
+  
+    .buy__text{
+  
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: small;
+    }
+    .buy__button{
+      background-color: rgb(51, 255, 0);
+      width:100px;
+      text-align: center;
+      transform: translateY(-50px);
       
+    }
+  
+  
+    .footer{
+      flex-direction: column;
+     
+      gap: 50px;
+  
+  
+    }
+    .footer__logo{
+      padding-top: 20px;
+    }
+    .footer__links__icon{
+      color:white;
+      margin: 0;
+    }
+    .footer__links__header{
+      margin-left: 0px;
+    }
+    .footer__news{
+      margin:10px;
+       background-color: rgb(49, 45, 45);
+    }
+    .footer__news__card{
+      width: 18rem;
+      background-color: rgb(49, 45, 45);
+    }
+    .footer__news__body{
+      margin:10px;
+       background-color: rgb(49, 45, 45);
+    }
+    
+    .footer__bottom{
+      border-top: 2px solid rgba(105,105,105,0.5);
+      color:white;
+      text-align: center;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .footer__news__header{
+      text-align: 
+      left;color: antiquewhite;
+    }
+    .footer__news__text{
+      text-align: left;
+      color: grey;
+    
+    }
+    .footer__news__input{
+      width:90%;
+      margin-bottom: 10px;
+    }
+  
+    .footer__links{
+      transform: translateX(-100px);
+    }
+    .footer__address{
+      transform: translateX(-70px);
+    }
+    
+   
+    
+  }
+    
 
-      @media all and (max-width:1024px ) and (max-height: 768px)and (orientation:landscape) {
-
-        .nav-link{
-          color:black;
-            margin-right: 2px;
-          margin-left: 2px;
-          font-size: 20px;
-          text-align: center;
-          }
-          .cards{
-            align-items: center;
-             justify-content: center;
-             gap: 10px;
-             
-             }
-             .footer{
-              display: flex;
-              flex-direction: row;
-              gap:20px;
-              align-items: center;
-              margin-top: 10px;
-              margin-bottom: 10px;
-              }
-              .footer__news__body{
-                margin:10px;
-                background-color: rgb(49, 45, 45);
-                }
-                .footer__news__card{
-                  width: 16rem;
-                  background-color: rgb(49, 45, 45);
-                  }
-              
-              .footer__logo img{
-              width: 200px;
-              padding: 2px;
-              }
-              
-              .footer__links{
-                transform:translateY(5px);
-                
-                }
-      }
+/*home color,slider responsive,home color responsive*/
