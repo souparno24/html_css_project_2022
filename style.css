@@ -298,6 +298,14 @@ font-size:larger;
     .slider__body{
       gap:15px;
     }
+
+    .slider__text{
+      font-size: 25px;
+    }
+    .slider__button{
+      width:300px;
+      font-size: 25px;
+    }
     .buy{
       margin-top: 0.1%;
       margin-bottom: 40px;
@@ -480,296 +488,22 @@ font-size:larger;
     }
     }
 
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-  body{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height:100%;
-  }
-  .navbar-nav a{
-    font-size: 15px;
-    color:black;
-     text-align: center;
-  }
-
-  #nav__img{
-    width: 250px;
-  }
-  
-    .nc {
-      display: flex;
-      justify-content: space-between;
-      gap:5rem;
-      background-color: white;
-      align-items: center;
-      width: 100%;
+    @media (max-width: 1024px){
+      
+      .slider__button{
+        width :200px;
+        height: 40px;
+        font-size: 15px;
+      }
+      .slider__text{
+        font-size: large;
+      }
+      .buy__img{
+        height: 200px;
+      }
     }
-    
-    
-    .navbar-nav{ 
-      display: flex;
-      justify-content: space-evenly;
-      gap: 5px;
-    }
-  
-
-  .navbar {padding: 0 1rem;}
-  .navbar .nav-item{padding:1rem 1rem}
 
 
-  .slider__body{
-  justify-content: center;
-  align-items: center;
-  gap:5px;
-  height: 90px;
-  }
-  
-  .cards{
-   align-items: center;
-    justify-content: center;
-    gap: 10px;
-    
-    }
-    .card{
-    position: relative;
-    width:14rem;
-   
-    background: #fff;
-    }
-  .buy__img{
-  height: 250px;
-  
-  }
-  
-  .buy__text{
-  
-  align-items: center;
-  font-size: medium;
-  }
-  .buy__button{
-    background-color: rgb(51, 255, 0);
-    width:300px;
-    text-align: center;
-    transform: translateY(-10px);
-    
-  }
-  .footer{
-    display: flex;
-    flex-direction: row;
-    gap:20px;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    }
-    .footer__news__body{
-      margin:10px;
-      background-color: rgb(49, 45, 45);
-      }
-      .footer__news__card{
-        width: 16rem;
-        background-color: rgb(49, 45, 45);
-
-        }
-    
-    .footer__logo img{
-    width: 150px;
-    padding: 2px;
-    }
-    
-    .footer__links{
-      transform:translateY(-10px);
-      
-      }
-  }
-  
-
-  @media all and (device-width:1024px ) and (device-height: 768px)and (orientation:landscape) {
-    body{
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      height:100%;
-    }
-    .navbar-nav a{
-      font-size: 180px;
-      color:black;
-      
-      text-align: center;
-    }
-  
-    #nav__img{
-      width: 250px;
-    }
-    
-      .nc {
-        display: flex;
-        justify-content: space-between;
-        gap:5rem;
-        background-color: white;
-        align-items: center;
-        width: 100%;
-      }
-      
-      
-      .navbar-nav{ 
-        display: flex;
-        justify-content: space-evenly;
-        gap: 3px;
-      }
-   
-      .cards{
-        align-items: center;
-         justify-content: center;
-         gap: 10px;
-         
-         }
-         .card{
-         position: relative;
-         width:18rem;
-        
-         background: #fff;
-         }
-
-         .buy__img{
-           height: 300px;
-         }
-         .buy__button{
-           width: 400px;
-           transform: translateY(20px);
-         }
-         .footer{
-          display: flex;
-          flex-direction: row;
-          gap:20px;
-          align-items: center;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          }
-          .footer__news__body{
-            margin:10px;
-            background-color: rgb(49, 45, 45);
-            }
-            .footer__news__card{
-              width: 16rem;
-              background-color: rgb(49, 45, 45);
-              }
-          
-          .footer__logo img{
-          width: 200px;
-          padding: 2px;
-          }
-          
-          .footer__links{
-            transform:translateY(5px);
-            
-            }
-  }
-
-  @media all and (device-width:1024px ) and (device-height: 600px)and (orientation:landscape) {
-    body{
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      height:100%;
-    }
-    .navbar-nav a{
-      font-size: 18px;
-      color:black;
-      text-align: center;
-    }
-  
-    #nav__img{
-      width: 250px;
-    }
-   
-      .nc {
-        display: flex;
-        justify-content: space-between;
-        gap:5rem;
-        background-color: white;
-        align-items: center;
-        width: 100%;
-      }
-      
-      
-      .navbar-nav{ 
-        display: flex;
-        justify-content: space-evenly;
-        gap: 5px;
-      }
-    
-    
-  
-    .navbar {padding: 0 1rem;}
-    .navbar .nav-item{padding:1rem 1rem}
-  
-  
-    .slider__body{
-    justify-content: center;
-    align-items: center;
-    gap:5px;
-    height: 90px;
-    }
-    
-    .cards{
-     align-items: center;
-      justify-content: center;
-      gap: 10px;
-      
-      }
-      .card{
-      position: relative;
-      width:14rem;
-     
-      background: #fff;
-      }
-    .buy__img{
-    height: 250px;
-    
-    }
-    
-    .buy__text{
-    
-    align-items: center;
-    font-size: medium;
-    }
-    .buy__button{
-      background-color: rgb(51, 255, 0);
-      width:300px;
-      text-align: center;
-      transform: translateY(-10px);
-      
-    }
-    .footer{
-      display: flex;
-      flex-direction: row;
-      gap:20px;
-      align-items: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      }
-      .footer__news__body{
-        margin:10px;
-        background-color: rgb(49, 45, 45);
-        }
-        .footer__news__card{
-          width: 16rem;
-          background-color: rgb(49, 45, 45);
-  
-          }
-      
-      .footer__logo img{
-      width: 150px;
-      padding: 2px;
-      }
-      
-      .footer__links{
-        transform:translateY(-10px);
-        
-        }
-  }
   @media (max-width: 768px) {
     body{
       padding: 0;
@@ -811,8 +545,17 @@ font-size:larger;
     .slider__body{
     justify-content: center;
     align-items: center;
-    gap:5px;
+    gap:100px;
     height: 90px;
+    }
+    .slider__text{
+      font-size: medium;
+    }
+
+    .slider__button{
+      width :250px;
+      height: 40px;
+      font-size: 15px;
     }
     
     .cards{
@@ -823,10 +566,32 @@ font-size:larger;
       }
       .card{
       position: relative;
-      width:14rem;
+      width:15rem;
      
       background: #fff;
       }
+      .card-text{
+        transform: translateY(-30px);
+        color:grey;
+        font-size: small;
+      }
+      .card-title{
+        font-size: medium;
+      }
+      .card__button{
+        width: 120px;
+      }
+      .card__img{
+     
+        
+        transform: translateY(-50px);
+      
+        height: 90px;
+        width: 90px;
+      
+       
+      }
+      
     .buy__img{
     height: 250px;
     
@@ -872,10 +637,13 @@ font-size:larger;
       }
       
       .footer__links{
-        transform:translateY(-10px);
+        transform:translateY(-8px);
         
         }
-    
+        .footer__news__card{
+          height:220px;
+  
+        }
   }
 
   @media (max-width:765px){
@@ -1045,7 +813,10 @@ font-size:larger;
     .footer__address{
       transform: translateX(-70px);
     }
-    
+    .footer__news__card{
+      height:180px;
+
+    }
    
   }
  
@@ -1125,11 +896,18 @@ font-size:larger;
     }
   
     .card{
-      margin-bottom: 50px;
+      margin-bottom: 80px;
       width: 18rem;
     }
     .card-text{
       font-size: small;
+    }
+    .card-title{
+      transform: translateY(-40px);
+    }
+    .card__button{
+      width: 100px;
+      font-size: 12px;
     }
     .buy__img{
       height: 250px;
@@ -1212,6 +990,10 @@ font-size:larger;
     .footer__address{
       transform: translateX(-70px);
     }
+    .footer__news__card{
+      height:180px;
+
+    }
     
    
     
@@ -1240,7 +1022,24 @@ font-size:larger;
       transform:translateX(30px);
       }
       .card{
-        margin-bottom: 50px;
+        margin-bottom: 80px;
+      }
+      .card__img{
+     
+        
+        transform: translateY(-40px);
+      
+        height: 80px;
+        width: 80px;
+      
+       
+      }
+      .card-title{
+        transform: translateY(-40px);
+      }
+      .card__button{
+        width: 100px;
+        font-size: 12px;
       }
       .slider__text{
         font-size:12px;
@@ -1251,5 +1050,9 @@ font-size:larger;
       }
       .footer__address{
         transform: translateX(-50px);
+      }
+      .footer__news__card{
+        height:180px;
+
       }
   }
