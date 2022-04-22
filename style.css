@@ -469,7 +469,7 @@ border:none;
     }
   
     #nav__img{
-      width: 250px;
+      width: 350px;
     }
    
       .nc {
@@ -485,7 +485,7 @@ border:none;
       .navbar-nav{ 
         display: flex;
         justify-content: space-evenly;
-        gap: 5px;
+        gap: 15px;
       }
       .footer__address{
         font-size: large;
@@ -506,7 +506,7 @@ border:none;
      
       .buy__button{
         background-color: rgb(51, 255, 0);
-        width: 400px;
+        width: 300px;
         text-align: center;
         transform: translateY(10px);
         
@@ -538,9 +538,17 @@ border:none;
         padding-right: .5rem;
         padding-left: .5rem;
       }
+      #nav__img{
+        width: 250px;
+      }
       .navbar-nav{ 
         
-        gap: 3rem;
+        gap: 2rem;
+      }
+      .navbar-nav a{
+        font-size: 15px;
+        color:black;
+      text-align: center;
       }
       .slider__button{
         width :200px;
@@ -555,12 +563,15 @@ border:none;
         font-size: medium;
       }
       .card{
-        width: 18rem;
+        width: 16rem;
       }
       .card__img{
         width:100px;
         height: 100px;
       }
+      .cards{
+        gap: 10px;
+        }
       .slider img{
         height: 350px;
       }
@@ -580,10 +591,10 @@ border:none;
         width: 200px;
       }
       .footer__address{
-        font-size: large;
+        font-size: medium;
       }
       .footer__links{
-        font-size: large;
+        font-size: medium;
       }
       .footer__news__card{
         width: 250px;
@@ -747,180 +758,162 @@ border:none;
         }
   }
 
-  @media (max-width:765px){
-    .header{
-      display:flex;
-      flex-direction: row;
-      gap:250px;
+ 
+  @media all and (max-width: 680px) and (orientation:landscape){
+    body{
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height:100%;
     }
-    .nc {
-      display: flex;
-      flex-direction: row;
-     
-      gap:0;
-      background-color: white;
-           width: 100%;
+    .navbar-nav a{
+      font-size: 12px;
+      color:black;
+       text-align: center;
     }
-    .navbar-nav{ 
-      display: flex;
-      flex-direction: column;
-      
-      gap: 0;
-    }
-    
+
+  
     #nav__img{
-      padding-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      height: 100%;
-      width: 250px;
-      transform:translateX(220px);
-      }
-    .nav__ul{
-      background-color:rgb(51, 255, 0);
-     }
-     .navbar {padding: 0;}
-     .navbar .nav-item{padding:1rem 1rem}
-  
-  
-    .nc{
-      background-color: white;
+      width: 220px;
     }
-    .nav-item {
-      text-align: center;
-     
-  
-    }
-    .active{
-      background-color:lightgrey;
-    }
-  .slider > img{
-    height: 200px;
-  }
     
-   .slider__body{
-     
-     justify-content: center;
-     align-items: center;
-    gap:5px;
-     height: 70px;
-   }
+      .nc {
+        display: flex;
+        justify-content: space-between;
+        gap:5rem;
+        background-color: white;
+        align-items: center;
+        width: 100%;
+      }
+      
+      
+      .navbar-nav{ 
+        display: flex;
+        justify-content: space-evenly;
+        gap: 8px;
+      }
+    
   
-   .slider__text{
-    font-size: medium;
-   }
-  .slider__button{
-    width:180px;
-    font-size: medium;
-    height: 35px;
-    transform: translateY(-10px);
+    .navbar {padding: 0 1rem;}
+.navbar .nav-item{
+  padding-top:1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
   
-  }
   
-    .cards {
-      flex-direction: column;
-      align-items: center;
+    .slider__body{
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    height: 90px;
     }
-  
-    .card{
-      margin-bottom: 50px;
-      width: 22rem;
-    }
-    .card-text{
+    .slider__text{
       font-size: small;
     }
-    .buy__img{
-      height: 250px;
-    }
-  
-  
-    .buy__text{
 
-      margin-top: 10px;
-      flex-direction: column;
+    .slider__button{
+      width :150px;
+      height: 40px;
+      font-size: 15px;
+    }
+    .slider img{
+      height: 300px;
+    }
+    
+    .cards{
+     align-items: center;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-size: medium;
-      width: 100%;
+      gap: 10px;
+      
+      }
+      .card{
+      position: relative;
+      width:12rem;
+     
+      background: #fff;
+      }
+      .card-text{
+        transform: translateY(-30px);
+        color:grey;
+        font-size: smaller;
+      }
+      .card-title{
+        font-size: medium;
+      }
+      .card__button{
+        width: 120px;
+      }
+      .card__img{
+     
+        
+        transform: translateY(-40px);
+      
+        height: 70px;
+        width: 70px;
+      
+       
+      }
+      
+    .buy__img{
+    height: 200px;
+    
+    }
+    
+    .buy__text{
+    
+    align-items: center;
+    font-size: medium;
+    width:94%;
     }
     .buy__button{
       background-color: rgb(51, 255, 0);
-      width:100px;
+      width:300px;
       text-align: center;
-      transform: translateY(-50px);
+      transform: translateY(-10px);
       
     }
-  
-    
     .footer{
-      flex-direction: column;
-     
-      gap: 50px;
-  
-  
-    }
-    .footer__logo{
-      padding-top: 20px;
-    
-    }
-    .footer__logo img{
-      width: 300px;
-    }
-    .footer__links__icon{
-      color:white;
-      margin: 0;
-    }
-    .footer__links__header{
-      margin-left: 0px;
-    }
-    .footer__news{
-      margin:10px;
-       background-color: rgb(49, 45, 45);
-    }
-    .footer__news__card{
-      width: 18rem;
-      background-color: rgb(49, 45, 45);
-    }
-    .footer__news__body{
-      margin:10px;
-       background-color: rgb(49, 45, 45);
-    }
-    
-    .footer__bottom{
-      border-top: 2px solid rgba(105,105,105,0.5);
-      color:white;
-      text-align: center;
-      margin-right: 20px;
-      margin-left: 20px;
-    }
-    .footer__news__header{
-      text-align: 
-      left;color: antiquewhite;
-    }
-    .footer__news__text{
-      text-align: left;
-      color: grey;
-    
-    }
-    .footer__news__input{
-      width:90%;
+      display: flex;
+      flex-direction: row;
+      gap:20px;
+      align-items: center;
+      margin-top: 10px;
       margin-bottom: 10px;
-    }
-  
-    .footer__links{
-      transform: translateX(-100px);
-    }
-    .footer__address{
-      transform: translateX(-70px);
-    }
-    .footer__news__card{
-      height:180px;
+      }
 
-    }
-   
+      .footer__address{
+        width: 300px;
+      font-size: smaller;
+      }
+      .footer__links{
+        width: 200px;
+        font-size: smaller;
+        transform: translateY(-10px);
+  
+      }
+      .footer__news__body{
+        margin:10px;
+        background-color: rgb(49, 45, 45);
+        }
+        .footer__news__card{
+          width: 12rem;
+          background-color: rgb(49, 45, 45);
+  
+          }
+      
+      .footer__logo img{
+      width: 160px;
+      padding: 2px;
+      }
+      
+     
+        .footer__news__card{
+          height:250px;
+  
+        }
   }
- 
   @media (max-width: 576px) {
     .header{
       display:flex;
@@ -1116,7 +1109,8 @@ border:none;
       font-size: medium;
     }
     .footer__news__card{
-      height:180px;
+      height:200px;
+      width: 14rem;
 
     }
 
@@ -1186,7 +1180,8 @@ border:none;
         font-size: medium;
       }
       .footer__news__card{
-        height:180px;
+        height:200px;
+        width: 14rem;
 
       }
   }
