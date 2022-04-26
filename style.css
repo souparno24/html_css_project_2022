@@ -9,10 +9,13 @@ body{
 .nc {
   display: flex;
   justify-content: space-between;
-  gap:10rem;
+  gap:8rem;
   background-color: white;
   align-items: center;
   width: 100%;
+  max-width: 1480px;
+  margin: auto;
+  position: relative;
 }
 .nav__img{
   
@@ -28,7 +31,7 @@ width: 500px;
 .navbar-nav{ 
   display: flex;
   justify-content: space-evenly;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .navbar-nav a {
@@ -72,6 +75,9 @@ width: 500px;
 
   margin: 0 ; 
 }
+.img-fluid{
+  width: 100%;
+}
 .slider__button{
   width:250px;
   height: 50px;
@@ -94,14 +100,20 @@ width: 500px;
   display:flex;
   flex-direction: row;
   gap: 500px;
+ 
+  
 }
 .slider__text{
+  
 
 font-size:larger;
   
 }
 .slider__button{
   border:none;
+
+  
+  
 }
 
 /* cards */
@@ -110,17 +122,20 @@ font-size:larger;
     display: flex;
     flex-direction: row;
     justify-content: center;
-   
+    max-width: 1480px;
+    margin: auto;
+  
     gap: 100px;
     margin-top: 100px;
     margin-bottom: 10px;
+    
+  
   }
   .card{
     position: relative;
     width: 30rem;
     background: #fff;
-    
-}
+  }
 .card__button{
   background-color:rgb(51, 255, 0) ;
   transform: translateY(-20px);
@@ -206,7 +221,9 @@ font-size:larger;
 .footer{
   display: flex;
   justify-content: space-around;
-
+  max-width: 1480px;
+    margin: auto;
+  
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -350,7 +367,7 @@ border:none;
       font-size: large;
     }
     .footer__address{
-      font-size: 25px;
+      font-size: 23px;
     }
     .footer__links{
       font-size: 20px;
@@ -469,7 +486,7 @@ border:none;
     }
   
     #nav__img{
-      width: 350px;
+      width: 250px;
     }
    
       .nc {
@@ -485,7 +502,7 @@ border:none;
       .navbar-nav{ 
         display: flex;
         justify-content: space-evenly;
-        gap: 15px;
+        gap: 5px;
       }
       .footer__address{
         font-size: large;
@@ -506,7 +523,7 @@ border:none;
      
       .buy__button{
         background-color: rgb(51, 255, 0);
-        width: 300px;
+        width: 400px;
         text-align: center;
         transform: translateY(10px);
         
@@ -538,17 +555,9 @@ border:none;
         padding-right: .5rem;
         padding-left: .5rem;
       }
-      #nav__img{
-        width: 250px;
-      }
       .navbar-nav{ 
         
-        gap: 2rem;
-      }
-      .navbar-nav a{
-        font-size: 15px;
-        color:black;
-      text-align: center;
+        gap: 3rem;
       }
       .slider__button{
         width :200px;
@@ -563,15 +572,12 @@ border:none;
         font-size: medium;
       }
       .card{
-        width: 16rem;
+        width: 18rem;
       }
       .card__img{
         width:100px;
         height: 100px;
       }
-      .cards{
-        gap: 10px;
-        }
       .slider img{
         height: 350px;
       }
@@ -591,16 +597,191 @@ border:none;
         width: 200px;
       }
       .footer__address{
-        font-size: medium;
+        font-size: large;
       }
       .footer__links{
-        font-size: medium;
+        font-size: large;
       }
       .footer__news__card{
         width: 250px;
       }
     }
-
+    
+    @media (max-width: 900px) {
+      body{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height:100%;
+      }
+      .navbar-nav a{
+        font-size: 12px;
+        color:black;
+         text-align: center;
+      }
+  
+    
+      #nav__img{
+        width: 250px;
+      }
+      
+        .nc {
+          display: flex;
+          flex-direction: row;
+          gap:3rem;
+          background-color: white;
+          align-items: center;
+          width: 100%;
+        }
+        
+        
+        .navbar-nav { 
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+        }
+      
+    
+      .navbar {padding: 0 1rem;}
+  .navbar .nav-item{
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+    
+    
+      .slider__body{
+      justify-content: center;
+      align-items: center;
+      gap:100px;
+      height: 90px;
+      }
+      .slider__text{
+        font-size: medium;
+      }
+  
+      .slider__button{
+        width :250px;
+        height: 40px;
+        font-size: 15px;
+      }
+      .slider img{
+        height: 250px;
+      }
+      
+      .cards{
+       align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+        }
+        .card{
+        position: relative;
+        width:13rem;
+       
+        background: #fff;
+        }
+        .card-text{
+          transform: translateY(-40px);
+          color:grey;
+          font-size: 12px;
+        }
+        .card-title{
+          font-size: 15px;
+        }
+        .card__button{
+          width: 100px;
+          font-size: smaller;
+        }
+        .card__img{
+       
+          
+          transform: translateY(-40px);
+        
+          height: 80px;
+          width: 80px;
+        
+         
+        }
+        
+      .buy__img{
+      height: 200px;
+      
+      }
+      
+      .buy__text{
+      
+      align-items: center;
+      font-size: medium;
+      width:94%;
+      }
+      .buy__button{
+        background-color: rgb(51, 255, 0);
+        width:300px;
+        text-align: center;
+        transform: translateY(-10px);
+        
+      }
+      .footer{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+        .footer__logo img{
+          width: 140px;
+          padding-left: 5px;
+        }
+  
+        .footer__address{
+          width: 150px;
+          font-size: 12px;
+          
+        }
+        .footer__address h3{
+          font-size: 18px;
+        }
+        .footer__links{
+          width: 120px;
+          font-size: small;
+          
+          font-size: 12px;
+    
+        }
+        .footer__links h3{
+          font-size: 18px;
+        }
+        .footer__news__body{
+          margin:10px;
+          background-color: rgb(49, 45, 45);
+          }
+          .footer__news__card{
+            width: 13rem;
+            background-color: rgb(49, 45, 45);
+    
+            }
+            .footer__news__header{
+              font-size: 15px;
+            }
+            .footer__news__text{
+              font-size: small;
+            }
+        
+        
+        
+       
+          .footer__news__card{
+            height:200px;
+    
+          }
+          ::placeholder{
+            font-size: 10px;
+          }
+    }
 
   @media (max-width: 768px) {
     body{
@@ -610,30 +791,30 @@ border:none;
       height:100%;
     }
     .navbar-nav a{
-      font-size: 15px;
+      font-size: 12px;
       color:black;
        text-align: center;
     }
 
   
     #nav__img{
-      width: 220px;
+      width: 200px;
     }
     
       .nc {
         display: flex;
-        justify-content: space-between;
-        gap:5rem;
+        flex-direction: row;
+        gap:3rem;
         background-color: white;
         align-items: center;
         width: 100%;
       }
       
       
-      .navbar-nav{ 
+      .navbar-nav { 
         display: flex;
-        justify-content: space-evenly;
-        gap: 10px;
+        flex-direction: row;
+        gap: 0rem;
       }
     
   
@@ -662,7 +843,7 @@ border:none;
       font-size: 15px;
     }
     .slider img{
-      height: 300px;
+      height: 250px;
     }
     
     .cards{
@@ -673,185 +854,29 @@ border:none;
       }
       .card{
       position: relative;
-      width:15rem;
+      width:13rem;
      
       background: #fff;
       }
       .card-text{
-        transform: translateY(-30px);
+        transform: translateY(-40px);
         color:grey;
-        font-size: small;
-      }
-      .card-title{
-        font-size: medium;
-      }
-      .card__button{
-        width: 120px;
-      }
-      .card__img{
-     
-        
-        transform: translateY(-50px);
-      
-        height: 90px;
-        width: 90px;
-      
-       
-      }
-      
-    .buy__img{
-    height: 200px;
-    
-    }
-    
-    .buy__text{
-    
-    align-items: center;
-    font-size: medium;
-    width:94%;
-    }
-    .buy__button{
-      background-color: rgb(51, 255, 0);
-      width:300px;
-      text-align: center;
-      transform: translateY(-10px);
-      
-    }
-    .footer{
-      display: flex;
-      flex-direction: row;
-      gap:20px;
-      align-items: center;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      }
-
-      .footer__address{
-        width: 300px;
         font-size: 12px;
       }
-      .footer__links{
-        width: 200px;
-        font-size: small;
-        transform: translateY(5px);
-  
-      }
-      .footer__news__body{
-        margin:10px;
-        background-color: rgb(49, 45, 45);
-        }
-        .footer__news__card{
-          width: 15rem;
-          background-color: rgb(49, 45, 45);
-  
-          }
-      
-      .footer__logo img{
-      width: 180px;
-      padding: 2px;
-      }
-      
-     
-        .footer__news__card{
-          height:220px;
-  
-        }
-  }
-
- 
-  @media all and (max-width: 680px) and (orientation:landscape){
-    body{
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      height:100%;
-    }
-    .navbar-nav a{
-      font-size: 12px;
-      color:black;
-       text-align: center;
-    }
-
-  
-    #nav__img{
-      width: 220px;
-    }
-    
-      .nc {
-        display: flex;
-        justify-content: space-between;
-        gap:5rem;
-        background-color: white;
-        align-items: center;
-        width: 100%;
-      }
-      
-      
-      .navbar-nav{ 
-        display: flex;
-        justify-content: space-evenly;
-        gap: 8px;
-      }
-    
-  
-    .navbar {padding: 0 1rem;}
-.navbar .nav-item{
-  padding-top:1.5rem;
-  padding-bottom: 1.5rem;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-}
-  
-  
-    .slider__body{
-    justify-content: center;
-    align-items: center;
-    gap:100px;
-    height: 90px;
-    }
-    .slider__text{
-      font-size: small;
-    }
-
-    .slider__button{
-      width :150px;
-      height: 40px;
-      font-size: 15px;
-    }
-    .slider img{
-      height: 300px;
-    }
-    
-    .cards{
-     align-items: center;
-      justify-content: center;
-      gap: 10px;
-      
-      }
-      .card{
-      position: relative;
-      width:12rem;
-     
-      background: #fff;
-      }
-      .card-text{
-        transform: translateY(-30px);
-        color:grey;
-        font-size: smaller;
-      }
       .card-title{
-        font-size: medium;
+        font-size: 15px;
       }
       .card__button{
-        width: 120px;
+        width: 100px;
+        font-size: smaller;
       }
       .card__img{
      
         
         transform: translateY(-40px);
       
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
       
        
       }
@@ -877,21 +902,34 @@ border:none;
     .footer{
       display: flex;
       flex-direction: row;
-      gap:20px;
+      gap:2rem;
       align-items: center;
+      justify-content: center;
       margin-top: 10px;
       margin-bottom: 10px;
       }
+      .footer__logo img{
+        width: 120px;
+        padding-left: 5px;
+      }
 
       .footer__address{
-        width: 300px;
-      font-size: smaller;
+        width: 150px;
+        font-size: 12px;
+        
+      }
+      .footer__address h3{
+        font-size: 18px;
       }
       .footer__links{
-        width: 200px;
-        font-size: smaller;
-        transform: translateY(-10px);
+        width: 120px;
+        font-size: small;
+        
+        font-size: 12px;
   
+      }
+      .footer__links h3{
+        font-size: 18px;
       }
       .footer__news__body{
         margin:10px;
@@ -902,18 +940,27 @@ border:none;
           background-color: rgb(49, 45, 45);
   
           }
+          .footer__news__header{
+            font-size: 15px;
+          }
+          .footer__news__text{
+            font-size: small;
+          }
       
-      .footer__logo img{
-      width: 160px;
-      padding: 2px;
-      }
+      
       
      
         .footer__news__card{
-          height:250px;
+          height:200px;
   
         }
+        ::placeholder{
+          font-size: 10px;
+        }
   }
+
+ 
+ 
   @media (max-width: 576px) {
     .header{
       display:flex;
@@ -927,6 +974,7 @@ border:none;
       gap:0;
       background-color: white;
            width: 100%;
+           position:absolute;
     }
     .navbar-nav{ 
       display: flex;
@@ -940,8 +988,11 @@ border:none;
       padding-top: 20px;
       padding-bottom: 20px;
       height: 100%;
-      width: 200px;
-      transform:translateX(50px);
+      width: 250px;
+      transform:translateX(120px);
+      }
+      .navbar-toggler{
+        transform:translateX(100px);
       }
     .nav__ul{
       background-color:rgb(51, 255, 0);
@@ -1101,7 +1152,7 @@ border:none;
     }
   
     .footer__links{
-      transform: translateX(-40px);
+      transform: translateX(-20px);
       font-size: medium;
     }
     .footer__address{
@@ -1117,6 +1168,19 @@ border:none;
     
    
     
+  }
+  @media (max-width: 425px){
+    #nav__img{
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 100%;
+      width: 200px;
+      transform:translateX(50px);
+      }
+      .navbar-toggler{
+        transform:translateX(10px);
+      }
   }
     
   @media (max-width: 320px){
@@ -1141,6 +1205,7 @@ border:none;
       width: 200px;
       transform:translateX(30px);
       }
+     
       .card{
         margin-bottom: 80px;
       }
@@ -1172,7 +1237,7 @@ border:none;
       }
 
       .footer__links{
-        transform: translateX(-40px);
+        transform: translateX(-10px);
         font-size: medium;
       }
       .footer__address{
