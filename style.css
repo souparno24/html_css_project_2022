@@ -76,13 +76,6 @@ width: 500px;
   margin: 0 ; 
 }
 
-.slider__button{
-  width:250px;
-  height: 50px;
-  color:white;
-  background-color:rgb(51, 255, 0);
-  border:none;
-}
 
 .slider__img{
   width:100%;
@@ -95,30 +88,28 @@ width: 500px;
   color: #f1f1f1; /* Grey text */
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
-  display:flex;
-  flex-direction: row;
-  
-   
-
-
-  
-}
-.slider__body p{
+  }
+.slider__body1{
   max-width: 1480px;
-
-  margin: auto; 
+  margin: auto;
+   display: flex;
+   flex-direction: row;
+   gap:100px;
 }
 .slider__text {
 
 font-size:30px;
-
+padding-left: 20px;
 }
 .slider__button{
-  border:none;
 
-  max-width: 1480px;
-  margin: auto;
-  
+  padding: 0px;
+ 
+  width:250px;
+  height: 50px;
+  color:white;
+  background-color:rgb(51, 255, 0);
+  border:none;
 }
 
 /* cards */
@@ -942,12 +933,13 @@ border:none;
   .slider > img{
     height: 200px;
   }
+  .slider__body1{
+    gap:5px;
+  }
     
    .slider__body{
      
-     justify-content: center;
-     align-items: center;
-    gap:5px;
+
      height: 70px;
    }
   
@@ -1103,6 +1095,9 @@ border:none;
       .navbar-toggler{
         transform:translateX(60px);
       }
+      .slider__body1{
+        gap:5px;
+      }
       .footer__links{
         transform: translateX(-90px);
         font-size: medium;
@@ -1126,6 +1121,9 @@ border:none;
       .navbar-toggler{
         transform:translateX(60px);
       }
+      .slider__body1{
+        gap:5px;
+      }
   }
   @media (max-width: 425px){
     #nav__img{
@@ -1138,6 +1136,9 @@ border:none;
       }
       .navbar-toggler{
         transform:translateX(35px);
+      }
+      .slider__body1{
+        gap:5px;
       }
       .slider__text{
     
@@ -1163,6 +1164,9 @@ border:none;
       width: 200px;
       transform:translateX(50px);
       }
+      .slider__body1{
+        gap:5px;
+      }
       .navbar-toggler{
         transform:translateX(10px);
       }
@@ -1183,6 +1187,9 @@ border:none;
       flex-direction: row;
       gap:50px;
     }
+    .slider__body1{
+      gap:5px;
+    }
     .active .nav-link{
       color:black;
     }
@@ -1201,6 +1208,9 @@ border:none;
       }
       .navbar-toggler{
         transform:translateX(30px);
+      }
+      .slider__body1{
+        gap:5px;
       }
       .card{
         margin-bottom: 80px;
